@@ -1,54 +1,186 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>أطلس للمقاولات | ATLAS</title>
-    
-    <!-- Bootstrap 5 RTL -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/site.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أطلس للمقاولات | ATLAS Contracting</title>
+    <!-- Bootstrap 5.3 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ملف الـ CSS -->
+    <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 
-    <!-- Navbar -->
+    <!-- النافبار -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                <span class="text-gold">ATLAS</span> | أطلس
+                <span class="text-gold">ATLAS</span> | أطلس للمقاولات
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-gold" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
-                    <li class="nav-item"><a class="nav-link" href="About.html">نبذة عنا</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Services.html">خدماتنا</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Projects.html">أعمالنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">خدماتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">أعمالنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">اتصل بنا</a></li>
                 </ul>
-                <a href="Contact.html" class="btn btn-gold ms-lg-3 mt-3 mt-lg-0">اطلب عرض سعر</a>
             </div>
         </div>
     </nav>
 
-    <!-- محتوى الصفحة -->
-    <main role="main">
-        <!-- قسم الـ Hero (انسخ محتواه من صفحتك الأصلية هنا) -->
-        <section class="hero-modern-wrapper">
-             <div class="hero-content-modern text-center">
-                <h1 class="display-3 text-white">أطلس للمقاولات</h1>
-                <p class="text-light">نصنع صروحاً تدوم لأجيال</p>
-                <a href="Projects.html" class="btn btn-gold-modern">استكشف أعمالنا</a>
-             </div>
-        </section>
-    </main>
+    <!-- الواجهة الرئيسية بالصور المتحركة، الشبكة، والـ Blobs -->
+    <section id="home" class="hero-modern-wrapper">
+        <!-- الصور الخلفية المتحركة (Slideshow) -->
+        <ul class="modern-slideshow">
+            <li><span>Image 01</span></li>
+            <li><span>Image 02</span></li>
+            <li><span>Image 03</span></li>
+        </ul>
 
-    <!-- Scripts -->
+        <!-- الخلفيات التفاعلية والشبكة المتحركة -->
+        <div class="animated-grid"></div>
+        <div class="blob blob-gold"></div>
+        <div class="blob blob-dark"></div>
+        <div class="hero-overlay-modern"></div>
+
+        <!-- محتوى الهيرو الفخم -->
+        <div class="hero-content-modern">
+            <span class="badge bg-dark text-gold border border-gold mb-3 px-3 py-2 shadow-lg">رائدون في عالم الإنشاءات</span>
+            <h1 class="display-3 fw-bold text-white mb-3">نصنع معالم هندسية تدوم لأجيال</h1>
+            <p class="text-light mb-4 mx-auto" style="max-width: 650px;">نتجاوز حدود التصميم التقليدي لنبتكر مساحات تنبض بالحياة، مزيج استثنائي بين دقة التنفيذ ورفاهية التفاصيل.</p>
+            <a href="#projects" class="btn btn-gold-modern">استكشف أعمالنا</a>
+        </div>
+    </section>
+
+    <!-- من نحن -->
+    <section id="about" class="py-5 bg-black position-relative">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="text-gold fw-bold mb-3">من نحن</h2>
+                    <p class="text-secondary lh-lg">نحن شركة أطلس للمقاولات، نملك رؤية هندسية متكاملة تهدف إلى تقديم جودة لا تضاهى في السوق الهنَدسي. نعتمد على أحدث التقنيات وأفضل الكوادر البشرية لتحويل الأفكار إلى واقع ملموس.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="custom-card text-center py-4">
+                        <h3 class="text-gold mb-2">+10 سنوات</h3>
+                        <p class="text-white m-0">من الخبرة والتميز في قطاع المقاولات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- خدماتنا -->
+    <section id="services" class="py-5" style="background-color: #0b0b0b;">
+        <div class="container py-4">
+            <h2 class="text-center text-gold fw-bold mb-5">خدماتنا الهندسية</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fa-solid fa-building text-gold fa-3x mb-3"></i>
+                        <h4 class="text-white mb-3">المقاولات العامة</h4>
+                        <p class="text-secondary">تنفيذ كافة المشاريع السكنية والتجارية بأعلى معايير الجودة والأمان.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fa-solid fa-compass-drafting text-gold fa-3x mb-3"></i>
+                        <h4 class="text-white mb-3">التصميم المعماري</h4>
+                        <p class="text-secondary">تصاميم عصرية ومبتكرة تتناسب مع تطلعاتك وتستغل كل مساحة بذكاء.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fa-solid fa-helmet-safety text-gold fa-3x mb-3"></i>
+                        <h4 class="text-white mb-3">إدارة المشروعات</h4>
+                        <p class="text-secondary">إشراف هندسي دقيق وإدارة احترافية للوقت والتكاليف حتى التسليم.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- أعمالنا -->
+    <section id="projects" class="py-5 bg-black">
+        <div class="container py-4">
+            <h2 class="text-center text-gold fw-bold mb-5">سابقة أعمالنا</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00" class="project-img" alt="مشروع">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75">
+                            <h5 class="text-white m-0">برج أطلس السكني</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="project-img" alt="مشروع">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75">
+                            <h5 class="text-white m-0">مجمع الرويال الإداري</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12" class="project-img" alt="مشروع">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-75">
+                            <h5 class="text-white m-0">فلل النخيل</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- اتصل بنا المطور -->
+<section id="contact" class="py-5" style="background-color: #0b0b0b;">
+    <div class="container py-4">
+        <h2 class="text-center text-gold fw-bold mb-5">تواصل معنا</h2>
+        <div class="row g-4">
+            <!-- معلومات الاتصال -->
+            <div class="col-lg-6">
+                <div class="custom-card h-100">
+                    <h4 class="text-gold mb-4">بيانات الشركة</h4>
+                    <div class="contact-info mb-3"><i class="fa-solid fa-location-dot"></i> شارع الجمهورية، بورسعيد، مصر</div>
+                    <div class="contact-info mb-3"><i class="fa-solid fa-phone"></i> 010123456789</div>
+                    <div class="contact-info mb-4"><i class="fa-solid fa-envelope"></i> info@atlas-contracting.com</div>
+                    
+                    <h5 class="text-white mt-4 mb-3">تابعنا على</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- الخريطة -->
+            <div class="col-lg-6">
+                <div class="map-container h-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.4357279768666!2d32.2965!3d31.2565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2m2!1d32.2965!2d31.2565!5e0!3m2!1sar!2seg!4v1690000000000" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- الفوتر مع توقيع شركة BTA -->
+    <footer class="py-4 bg-black text-center text-secondary border-top border-secondary border-opacity-10">
+        <div class="container">
+            <p class="m-0 mb-2">&copy; 2026 جميع الحقوق محفوظة لشركة أطلس للمقاولات.</p>
+            <p class="m-0 small text-gold opacity-75">تم الإنشاء بواسطة شركة BTA لحلول الأنظمة</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ملف الـ JS -->
     <script src="js/site.js"></script>
 </body>
 </html>
